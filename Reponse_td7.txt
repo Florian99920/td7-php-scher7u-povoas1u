@@ -1,0 +1,46 @@
+TD7 
+
+Exercice 1:
+
+1) Dans quel fichier est définie la classe Logger, préciser son namespace
+ 
+	fichier de la classe : ./src/Monolog/Logger.php 
+	namespace : \Monolog
+	nom complet : \Monolog\Logger
+
+2) Les deux classes ErrorHandler et Registry sont bien dans le même namespace (\Monolog)
+
+3) Le namespace commun aux classes stockées dans des fichiers créés directement dans le répertoire Handler est : \Monolog\Handler
+
+4) le chemin complet du fichier dans lequel est déclarée la classe \Monolog\Processor\HostnameProcessor est : ./src/Monolog/Processor/HostnameProcessor.php
+
+5)  le chemin complet du fichier dans lequel est déclarée la classe \Monolog\Handler\Slack\SlackRecord est : ./src/Monolog/Handler/Slack/SlackRecord.php 
+
+6) On souhaite ajouter la classe JsonFormatter dont le namespace est \Monolog\Formatter ; où doit-on créer le fichier correspondant ? et comment doit-on le nommer ?
+	
+	où -> dans le répertoire ./src/Monolog/Formatter/
+	le fichier doit se nommer JsonFormatter.php
+
+7) On créé le fichier src/Monolog/Formatter/sql/SqlFormatter.php ; Indiquez le nom de la classe qu'il peut définir et son namespace
+	
+	nom de la classe qu'il peut définir : SqlFormatter
+	namespace : Monolog\Formatter\sql
+	nom complet : Monolog\Formatter\sql\SqlFormatter
+
+
+8) On change le nom de la classe \Monolog\ErrorHandler en \Monolog\Handler\ErrorHandler ; quel est l'impact de cette modification sur le fichier dans lequel la classe est déclarée ?
+
+	On doit déplacer le fichier dans le répertoire Handler.
+
+9) En exécutant un programme utilisant cette librairie, on obtient un message d'erreur du type "\Monolog\Handler\Curl\Utils : class not found". D'où peut venir l'erreur ? Il y a plusieurs possibilités.
+
+	La classe n'existe pas dans ce namespace; 
+	Le fichier n'est pas nommé Utils.php;
+	Mauvais répertoire/ chemin de fichier;
+	Mauvaise config de l'auto loader (erreur de correspondance prefixe de namespace <-> répertoire racine).
+
+10) On souhaite renommer le répertoire "src/" en "lib/"; Quel est l'impact de cette modification ? que faut-il changer dans le projet ?
+	 On change le repertoire racine de "src/" à "lib/" dans la correspondance entre le prefixe des namespace et le répertoire racine. 
+
+	
+ 
