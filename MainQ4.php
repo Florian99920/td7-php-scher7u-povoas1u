@@ -7,7 +7,7 @@ use iutnc\deefy\render\AlbumTrackRenderer;
 use iutnc\deefy\render\AudioListRenderer;
 use iutnc\deefy\render\PodcastTrackRenderer;
 
-require_once 'vender/autoload.php';
+require_once 'vendor/autoload.php';
 
 
 $p = new PodcastTrack('Ce podcast', 'audio/03-Country_Girl-BB_King-Lucille.mp3', 54);
