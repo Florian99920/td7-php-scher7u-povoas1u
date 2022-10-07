@@ -19,7 +19,7 @@ class AudioListRenderer implements Renderer
 
         foreach ($this->audioList->pistes as $piste) {
             $audioRenderer = new AudioTrackRenderer($piste);
-            $s = $s . $audioRenderer->render(1);
+            $s = $s . $audioRenderer->render($selector);
         }
 
         return $s . "<p>{$this->audioList->nbPistes} pistes, {$this->audioList->duree} s</p>\n";

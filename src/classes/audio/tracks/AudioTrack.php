@@ -9,17 +9,17 @@ use iutnc\deefy\exception\NonEditablePropertyException;
 
 class AudioTrack {
 
-    private string $titre;
+    protected string $titre;
 
-    private string $artiste;
+    protected string $artiste;
 
-    private int $date;
+    protected int $date;
 
-    private string $genre;
+    protected string $genre;
 
-    private int $duree;
+    protected int $duree;
 
-    private string $chemin;
+    protected string $chemin;
 
     public function __construct(string $t, string $c, int $duree)
     {
